@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칼바람 챔피언 랜덤 선택기</title>
+    <link rel="stylesheet" href="lol.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="team-container" id="teamA">
+            <div class="champions"></div>
+        </div>
+        <div class="team-container" id="teamB">
+            <div class="champions"></div>
+        </div>
+        <div class="controls">
+            <button id="drawButton" onclick="initializeTeams()">시작</button>
+            <!-- <p>남은 교체 횟수: A팀 <span id="remainingSwapsA">5</span>, B팀 <span id="remainingSwapsB">5</span></p> -->
+        </div>
+    </div>
+    <script src="lol.js"></script>
+</body>
+</html>

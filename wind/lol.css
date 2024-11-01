@@ -1,0 +1,108 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.namu.wiki/i/K4gxgT5d-6RV9ZXgLyOpD_KzhVUbR7GgeuykCND_Cc0NUDPcDsMSAUoRO9RdfNSZ0eV2zc-Tsdu8Ui3yjoUcWa0fYDroJJRupfvg2liliNNtKxDVJ13shKL1U8y1T9W6wRHGBDae3ZnAx7TRgiNO1Q.webp');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.team-container {
+    width: 100%;
+    max-width: 1840px;
+    margin-bottom: 20px;
+}
+
+.champions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.champion {
+    flex: 1;
+    max-width: 160px;
+    margin: 0 5px;
+    background-color: #1E2328;
+    border: 2px solid #C89B3C;
+    border-radius: 5px;
+    overflow: hidden;
+    /* cursor: pointer; */
+}
+
+.champion img {
+    width: 100%;
+    height: auto;
+}
+
+.champion-info {
+    padding: 5px;
+    text-align: center;
+}
+
+.champion-name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #C89B3C;
+}
+
+.controls {
+    text-align: center;
+    width: 100%;
+    max-width: 1840px;
+}
+
+#drawButton {
+    background-color: #1E2328;
+    color: #C89B3C;
+    border: 2px solid #C89B3C;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 1713px;
+}
+
+#drawButton:hover {
+    background-color: #C89B3C;
+    color: #1E2328;
+}
+
+.controls p {
+    color: #C89B3C;
+    font-size: 16px;
+}
+
+@media (max-width: 880px) {
+    .champions {
+        flex-wrap: wrap;
+    }
+    
+    .champion {
+        margin-bottom: 10px;
+    }
+}
