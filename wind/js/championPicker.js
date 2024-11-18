@@ -51,7 +51,7 @@ const championMapping = {
     '탐 켄치': 'TahmKench', '트런들': 'Trundle', '트리스타나': 'Tristana', '트린다미어': 'Tryndamere', '트위스티드 페이트': 'TwistedFate',
     '트위치': 'Twitch', '티모': 'Teemo', '파이크': 'Pyke', '판테온': 'Pantheon', '피들스틱': 'Fiddlesticks',
     '피오라': 'Fiora', '피즈': 'Fizz', '하이머딩거': 'Heimerdinger', '헤카림': 'Hecarim', '흐웨이': 'Hwei',
-    '크산테': 'KSante', '밀리오': 'Milio', '나피리': 'Naafiri', '브라이어': 'Briar', '스몰더': 'Smolder', '오로라' : 'Aurora'
+    '크산테': 'KSante', '밀리오': 'Milio', '나피리': 'Naafiri', '브라이어': 'Briar', '스몰더': 'Smolder', '오로라' : 'Aurora', '암베사' : 'Ambessa'
 };
 
 let teamA = [];

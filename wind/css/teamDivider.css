@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/background2.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #C89B3C;
+    overflow: hidden;
+  }
+  
+  .team-divider-container {
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .team-input {
+    background-color: #1E2328;
+    padding: 20px;
+    border: 2px solid #C89B3C;
+    border-radius: 10px;
+    width: 875px; /* 넓이를 teams와 동일하게 설정 */
+    text-align: center;
+  }
+  
+  .inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 40px; /* 높이 조정 */
+  }
+  
+  .inputs input {
+    padding: 8px; /* 패딩 줄여서 높이 맞춤 */
+    font-size: 16px;
+    width: 600px;
+    border: 2px solid #C89B3C;
+    border-radius: 5px;
+    background-color: #1E2328;
+    color: #C89B3C;
+  }
+  
+  .inputs input::placeholder {
+    color: #C89B3C;
+    opacity: 0.8;
+  }
+  
+  .inputs button {
+    display: flex;
+    align-items: center; /* 텍스트 수직 정렬 */
+    justify-content: center;
+    height: 100%; /* 부모 컨테이너의 높이에 맞춤 */
+    padding: 0 20px; /* 좌우 패딩 */
+    font-size: 16px;
+    color: #1E2328;
+    background-color: #C89B3C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inputs button:hover {
+    background-color: #FFFFFF;
+    color: #C89B3C;
+  }
+  
+  .team-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    color: #C89B3C;
+  }
+  
+  .team {
+    background-color: #1E2328;
+    border: 2px solid #C89B3C;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px; /* 넓이를 team-input과 동일하게 설정 */
+    text-align: left;
+  }
+  
+  .teams {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  button#divideTeams {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #1E2328;
+    background-color: #C89B3C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button#divideTeams:hover {
+    background-color: #FFFFFF;
+    color: #C89B3C;
+  }
+  

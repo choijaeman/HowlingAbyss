@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팀장 뽑기</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/picker.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav>
+        <div class="nav-container">
+        <div class="logo">
+            <a href="../index.html">
+            <img src="../img/hptLogo.jpg" alt="로고" />
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="championPicker.html">챔피언 뽑기</a></li>
+            <li><a href="teamLeaderPicker.html">팀장 뽑기</a></li>
+            <li><a href="teamDivider.html">팀 나누기</a></li>
+        </ul>
+        </div>
+    </nav>
+  </header>
+
+  <main class="picker-container">
+    <div id="boxContainer">
+      <div class="box" id="teamBox">팀 장</div>
+    </div>
+    <div class="inputs-and-list">
+      <div class="inputs">
+        <input type="text" id="teamMemberInput" placeholder="이름 입력" />
+        <button id="addMember">추가</button>
+      </div>
+      <div id="teamMembersList" class="team-list"></div>
+    </div>
+  </main>
+
+  <script src="../js/picker.js"></script>
+</body>
+</html>

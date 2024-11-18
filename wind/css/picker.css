@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/HowlingAbyss.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #C89B3C;
+  }
+  
+  .picker-container {
+    text-align: center;
+    padding: 300px 20px; /* 헤더와의 간격 확보 */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 상단 정렬 */
+    gap: 50px; /* 박스와 입력창 사이 간격 */
+  }
+  
+  #boxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    width: 317px; /* 박스 크기 */
+    height: 317px;
+    background-color: #C89B3C;
+    color: #1E2328;
+    font-size: 24px; /* 폰트 크기 */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+    background-color: #FFD700;
+  }
+  
+  .box.exploded {
+    animation: explode 0.5s forwards;
+    background-color: red;
+    color: white;
+  }
+  
+  /* inputs와 team-list를 수직 정렬 */
+  .inputs-and-list {
+    display: flex;
+    flex-direction: column; /* 수직 정렬 */
+    align-items: flex-start;
+    gap: 20px; /* inputs와 team-list 사이 간격 */
+  }
+  
+  /* inputs 내부는 수평 정렬 */
+  .inputs {
+    display: flex;
+    flex-direction: row; /* 수평 정렬 */
+    gap: 10px; /* input과 button 간격 */
+  }
+  
+  .inputs input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 2px solid #C89B3C;
+    border-radius: 5px;
+    background-color: #1E2328;
+    color: #C89B3C;
+  }
+  
+  .inputs input::placeholder {
+    color: #C89B3C;
+    opacity: 0.8;
+  }
+  
+  .inputs button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #1E2328;
+    background-color: #C89B3C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inputs button:hover {
+    background-color: #FFFFFF;
+    color: #C89B3C;
+  }
+  
+  .team-list {
+    width: 282px;
+    text-align: left;
+    color: #C89B3C;
+    font-size: 16px;
+    border: 2px solid #C89B3C;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1E2328;
+  }
+  
+  .team-list p {
+    margin: 5px 0;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  

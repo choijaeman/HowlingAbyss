@@ -1,0 +1,47 @@
+.main-header {
+  background-color: #1E2328;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: space-between; /* 좌우 정렬 */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* 로고 이미지 수직 중앙 정렬 */
+}
+
+.logo img {
+  height: 60px; /* 로고 기본 높이 */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* hover 애니메이션 */
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* 살짝 커짐 */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* 메뉴 간 간격 */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu li a {
+  color: #C89B3C;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-menu li a:hover {
+  color: #FFFFFF;
+}
