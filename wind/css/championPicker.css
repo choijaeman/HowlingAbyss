@@ -25,6 +25,7 @@ body, html {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    padding-top: 0;
     box-sizing: border-box;
 }
 
@@ -49,7 +50,6 @@ body, html {
     border: 2px solid #C89B3C;
     border-radius: 5px;
     overflow: hidden;
-    /* cursor: pointer; */
 }
 
 .champion img {

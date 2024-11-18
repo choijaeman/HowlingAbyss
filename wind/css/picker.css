@@ -9,7 +9,7 @@ body {
   
   .picker-container {
     text-align: center;
-    padding: 300px 20px; /* 헤더와의 간격 확보 */
+    padding: 200px 20px; /* 헤더와의 간격 확보 */
     display: flex;
     justify-content: center;
     align-items: flex-start; /* 상단 정렬 */
