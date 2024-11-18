@@ -24,8 +24,8 @@ body {
   }
   
   .box {
-    width: 317px; /* 박스 크기 */
-    height: 317px;
+    width: 350px; /* 박스 크기 */
+    height: 350px;
     background-color: #C89B3C;
     color: #1E2328;
     font-size: 24px; /* 폰트 크기 */

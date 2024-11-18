@@ -5,6 +5,7 @@ body {
     background: url('../img/background2.webp') no-repeat center center fixed;
     background-size: cover;
     color: #C89B3C;
+    overflow: hidden;
   }
   
   .team-divider-container {
@@ -21,7 +22,7 @@ body {
     padding: 20px;
     border: 2px solid #C89B3C;
     border-radius: 10px;
-    width: 875px; /* 넓이를 teams와 동일하게 설정 */
+    width: 875px;
     text-align: center;
   }
   
@@ -68,6 +69,9 @@ body {
   }
   
   .team-list {
+    display: flex; /* 수평 정렬 */
+    flex-wrap: wrap; /* 줄바꿈 가능 */
+    gap: 10px; /* 항목 간 간격 */
     margin-top: 20px;
     list-style-type: none;
     padding: 0;
@@ -105,4 +109,3 @@ body {
     background-color: #FFFFFF;
     color: #C89B3C;
   }
-  
