@@ -19,6 +19,13 @@ addButton.addEventListener("click", () => {
   }
 });
 
+// 엔터 키 입력 시 팀원 추가
+inputField.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    addButton.click(); // "추가" 버튼 클릭 이벤트 실행
+  }
+});
+
 // 팀원 목록 업데이트
 function updateTeamMembersList() {
   membersListDiv.innerHTML = teamMembers

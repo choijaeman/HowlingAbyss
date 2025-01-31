@@ -15,7 +15,7 @@ const champions = [
     '카타리나', '칼리스타', '케넨', '케이틀린', '케인', '케일', '코그모', '코르키', '퀸', '클레드',
     '키아나', '킨드레드', '타릭', '탈론', '탈리야', '탐 켄치', '트런들', '트리스타나', '트린다미어', '트위스티드 페이트',
     '트위치', '티모', '파이크', '판테온', '피들스틱', '피오라', '피즈', '하이머딩거', '헤카림', '흐웨이' ,'크산테',
-    '밀리오', '나피리', '브라이어', '스몰더', '오로라'
+    '밀리오', '나피리', '브라이어', '스몰더', '오로라', '멜'
 ];
 
 const championMapping = {
@@ -51,7 +51,7 @@ const championMapping = {
     '탐 켄치': 'TahmKench', '트런들': 'Trundle', '트리스타나': 'Tristana', '트린다미어': 'Tryndamere', '트위스티드 페이트': 'TwistedFate',
     '트위치': 'Twitch', '티모': 'Teemo', '파이크': 'Pyke', '판테온': 'Pantheon', '피들스틱': 'Fiddlesticks',
     '피오라': 'Fiora', '피즈': 'Fizz', '하이머딩거': 'Heimerdinger', '헤카림': 'Hecarim', '흐웨이': 'Hwei',
-    '크산테': 'KSante', '밀리오': 'Milio', '나피리': 'Naafiri', '브라이어': 'Briar', '스몰더': 'Smolder', '오로라' : 'Aurora', '암베사' : 'Ambessa'
+    '크산테': 'KSante', '밀리오': 'Milio', '나피리': 'Naafiri', '브라이어': 'Briar', '스몰더': 'Smolder', '오로라' : 'Aurora', '암베사' : 'Ambessa','멜' : 'Mel'
 };
 
 let teamA = [];
@@ -83,27 +83,8 @@ function initializeTeams() {
         teamA.push(getRandomChampion());
         teamB.push(getRandomChampion());
     }
-    //챔프 재뽑 횟수
-    // remainingSwaps = [2, 2];
     updateDisplay();
 }
-
-//챔프 재뽑 함수
-// function swapChampion(team, index) {
-//     const teamIndex = team === 'A' ? 0 : 1;
-//     if (remainingSwaps[teamIndex] > 0) {
-//         const oldChampion = team === 'A' ? teamA[index] : teamB[index];
-//         usedChampions.delete(oldChampion);
-//         const newChampion = getRandomChampion();
-//         if (team === 'A') {
-//             teamA[index] = newChampion;
-//         } else {
-//             teamB[index] = newChampion;
-//         }
-//         remainingSwaps[teamIndex]--;
-//         updateDisplay();
-//     }
-// }
 
 function updateDisplay() {
     updateTeamDisplay('A', teamA);
